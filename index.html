@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo das Cores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+            color: white;
+        }
+        h1, p {
+            text-shadow: 1px 1px 2px black; /* Contorno mais suave */
+        }
+        #game-container {
+            margin-top: 50px;
+        }
+        .color-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            text-shadow: 1px 1px 2px black; /* Contorno leve */
+        }
+        #reset-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo das Cores</h1>
+    <p>Tente adivinhar a cor escolhida!</p>
+    <div id="game-container"></div>
+    <p id="hint"></p>
+    <button id="reset-button">Reiniciar</button>
+    <script src="script.js"></script>
+</body>
+</html>
